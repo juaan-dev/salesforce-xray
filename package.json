@@ -5,6 +5,7 @@
   "description": "Chrome DevTools for Salesforce transactions",
   "license": "MIT",
   "scripts": {
+    "dev": "pnpm --filter @salesforce-xray/devtools dev",
     "build": "pnpm -r build",
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
