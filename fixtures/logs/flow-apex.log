@@ -1,0 +1,34 @@
+Version: 58.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;FLOW,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+10:05:33.0 (502000)|EXECUTION_STARTED
+10:05:33.0 (1100000)|CODE_UNIT_STARTED|[EXTERNAL]|CaseTrigger on Case trigger event AfterUpdate for [500xx0000001236]
+10:05:33.0 (1350000)|METHOD_ENTRY|[10]|CaseTrigger.CaseTrigger()
+10:05:33.0 (1400000)|METHOD_EXIT|[10]|CaseTrigger
+10:05:33.0 (1500000)|CODE_UNIT_FINISHED|CaseTrigger on Case trigger event AfterUpdate for [500xx0000001236]
+10:05:33.0 (2000000)|FLOW_START_INTERVIEWS_BEGIN|1
+10:05:33.0 (2100000)|FLOW_START_INTERVIEW_BEGIN|Case_After_Save|Case_After_Save
+10:05:33.0 (2200000)|FLOW_ELEMENT_BEGIN|myDecision|Case_After_Save|Decision
+10:05:33.0 (2300000)|FLOW_ELEMENT_END|myDecision|Case_After_Save|Decision
+10:05:33.0 (2400000)|FLOW_ELEMENT_BEGIN|UpdateCase|Case_After_Save|RecordUpdate
+10:05:33.1 (105000000)|SOQL_EXECUTE_BEGIN|[FLOW]|Aggregations:0|SELECT Id, Status, SLA_Met__c FROM Case WHERE Id = :recordId
+10:05:33.1 (140000000)|SOQL_EXECUTE_END|[FLOW]|Rows:1
+10:05:33.1 (155000000)|DML_BEGIN|[FLOW]|Op:Update|Type:Case|Rows:1
+10:05:33.1 (175000000)|DML_END|[FLOW]
+10:05:33.1 (180000000)|FLOW_ELEMENT_END|UpdateCase|Case_After_Save|RecordUpdate
+10:05:33.1 (185000000)|FLOW_INTERVIEW_FINISHED|Case_After_Save|Case_After_Save
+10:05:33.1 (186000000)|FLOW_START_INTERVIEWS_END|1
+10:05:33.1 (188000000)|CUMULATIVE_LIMIT_USAGE
+10:05:33.1 (188000001)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 410 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+10:05:33.1 (188000002)|CUMULATIVE_LIMIT_USAGE_END
+10:05:33.1 (190000000)|EXECUTION_FINISHED
