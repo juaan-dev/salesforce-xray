@@ -1,0 +1,29 @@
+{
+  "name": "@salesforce-xray/extension",
+  "version": "0.1.0",
+  "description": "Salesforce X-Ray Chrome Extension",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@salesforce-xray/analyzer": "workspace:*",
+    "@salesforce-xray/parser": "workspace:*",
+    "@salesforce-xray/salesforce": "workspace:*",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.23",
+    "@types/chrome": "^0.0.268",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.2.0"
+  }
+}
