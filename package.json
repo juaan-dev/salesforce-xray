@@ -1,0 +1,20 @@
+{
+  "name": "salesforce-xray",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome DevTools for Salesforce transactions",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "parse": "pnpm --filter @salesforce-xray/parser parse"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  }
+}

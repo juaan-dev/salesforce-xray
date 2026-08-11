@@ -1,0 +1,29 @@
+node_modules/
+dist/
+.cache/
+*.local
+.env
+.env.*
+
+# Build artifacts
+build/
+out/
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# pnpm
+.pnpm-store/
